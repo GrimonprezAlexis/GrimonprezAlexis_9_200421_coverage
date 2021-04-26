@@ -19,5 +19,15 @@ describe("Given I am connected as an employee", () => {
       const datesSorted = [...dates].sort(antiChrono)
       expect(dates).toEqual(datesSorted)
     })
+    test('Then, Loading page should be rendered', () => {
+      const html = BillsUI({ loading: true })
+      document.body.innerHTML = html
+      expect(screen.getAllByText('Loading...')).toBeTruthy()
+    })
+    test('Then, Error page should be rendered', () => {
+      const html = BillsUI({ error: 'some error message' })
+      document.body.innerHTML = html
+      expect(screen.getAllByText('Erreur')).toBeTruthy()
+    })
   })
 })
