@@ -1,72 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1619466578911" clover="3.2.0">
-  <project timestamp="1619466578912" name="All files">
-    <metrics statements="221" coveredstatements="166" conditionals="102" coveredconditionals="78" methods="69" coveredmethods="44" elements="392" coveredelements="288" complexity="0" loc="221" ncloc="221" packages="3" files="16" classes="16"/>
+<coverage generated="1620167077055" clover="3.2.0">
+  <project timestamp="1620167077056" name="All files">
+    <metrics statements="221" coveredstatements="171" conditionals="102" coveredconditionals="81" methods="69" coveredmethods="46" elements="392" coveredelements="298" complexity="0" loc="221" ncloc="221" packages="3" files="16" classes="16"/>
     <package name="constants">
       <metrics statements="8" coveredstatements="8" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
       <file name="routes.js" path="C:\openclassroom\GrimonprezAlexis_9_202421\Coverage\P6-front-end-testing\src\constants\routes.js">
         <metrics statements="8" coveredstatements="8" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
-        <line num="6" count="6" type="stmt"/>
-        <line num="13" count="6" type="stmt"/>
-        <line num="14" count="14" type="cond" truecount="5" falsecount="0"/>
+        <line num="6" count="8" type="stmt"/>
+        <line num="13" count="8" type="stmt"/>
+        <line num="14" count="22" type="cond" truecount="5" falsecount="0"/>
         <line num="16" count="3" type="stmt"/>
-        <line num="18" count="3" type="stmt"/>
-        <line num="20" count="2" type="stmt"/>
+        <line num="18" count="5" type="stmt"/>
+        <line num="20" count="6" type="stmt"/>
         <line num="22" count="5" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
       </file>
       <file name="usersTest.js" path="C:\openclassroom\GrimonprezAlexis_9_202421\Coverage\P6-front-end-testing\src\constants\usersTest.js">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="containers">
-      <metrics statements="185" coveredstatements="132" conditionals="67" coveredconditionals="45" methods="54" coveredmethods="29"/>
+      <metrics statements="185" coveredstatements="135" conditionals="67" coveredconditionals="46" methods="54" coveredmethods="31"/>
       <file name="Bills.js" path="C:\openclassroom\GrimonprezAlexis_9_202421\Coverage\P6-front-end-testing\src\containers\Bills.js">
-        <metrics statements="26" coveredstatements="19" conditionals="8" coveredconditionals="4" methods="10" coveredmethods="6"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="9" count="2" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="11" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="12" count="2" type="stmt"/>
-        <line num="13" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="14" count="8" type="stmt"/>
-        <line num="16" count="2" type="stmt"/>
-        <line num="19" count="2" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="23" count="2" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
-        <line num="26" count="1" type="stmt"/>
-        <line num="27" count="1" type="stmt"/>
-        <line num="30" count="2" type="stmt"/>
-        <line num="31" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="33" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
+        <metrics statements="26" coveredstatements="22" conditionals="8" coveredconditionals="5" methods="10" coveredmethods="8"/>
+        <line num="7" count="10" type="stmt"/>
+        <line num="8" count="10" type="stmt"/>
+        <line num="9" count="10" type="stmt"/>
+        <line num="10" count="10" type="stmt"/>
+        <line num="11" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="10" type="stmt"/>
+        <line num="13" count="10" type="cond" truecount="1" falsecount="1"/>
+        <line num="14" count="16" type="stmt"/>
+        <line num="16" count="10" type="stmt"/>
+        <line num="19" count="10" type="stmt"/>
+        <line num="20" count="5" type="stmt"/>
+        <line num="23" count="10" type="stmt"/>
+        <line num="24" count="5" type="stmt"/>
+        <line num="25" count="5" type="stmt"/>
+        <line num="26" count="5" type="stmt"/>
+        <line num="27" count="5" type="stmt"/>
+        <line num="30" count="10" type="stmt"/>
+        <line num="31" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="33" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="34" count="3" type="stmt"/>
+        <line num="38" count="2" type="stmt"/>
         <line num="39" count="0" type="stmt"/>
         <line num="44" count="0" type="stmt"/>
         <line num="45" count="0" type="stmt"/>
         <line num="46" count="0" type="stmt"/>
-        <line num="48" count="0" type="stmt"/>
+        <line num="48" count="2" type="stmt"/>
       </file>
       <file name="Dashboard.js" path="C:\openclassroom\GrimonprezAlexis_9_202421\Coverage\P6-front-end-testing\src\containers\Dashboard.js">
         <metrics statements="78" coveredstatements="70" conditionals="45" coveredconditionals="37" methods="25" coveredmethods="16"/>
-        <line num="8" count="6" type="stmt"/>
+        <line num="8" count="8" type="stmt"/>
         <line num="9" count="27" type="cond" truecount="4" falsecount="0"/>
         <line num="15" count="24" type="cond" truecount="1" falsecount="1"/>
         <line num="16" count="24" type="stmt"/>
         <line num="19" count="0" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
         <line num="25" count="24" type="stmt"/>
-        <line num="29" count="6" type="stmt"/>
+        <line num="29" count="8" type="stmt"/>
         <line num="30" count="8" type="stmt"/>
         <line num="31" count="8" type="cond" truecount="1" falsecount="1"/>
         <line num="33" count="8" type="cond" truecount="1" falsecount="1"/>
         <line num="36" count="8" type="stmt"/>
-        <line num="54" count="6" type="stmt"/>
+        <line num="54" count="8" type="stmt"/>
         <line num="55" count="8" type="cond" truecount="4" falsecount="0"/>
-        <line num="58" count="6" type="stmt"/>
+        <line num="58" count="8" type="stmt"/>
         <line num="59" count="3" type="cond" truecount="3" falsecount="0"/>
         <line num="61" count="1" type="stmt"/>
         <line num="63" count="1" type="stmt"/>
@@ -133,7 +133,7 @@
       </file>
       <file name="Login.js" path="C:\openclassroom\GrimonprezAlexis_9_202421\Coverage\P6-front-end-testing\src\containers\Login.js">
         <metrics statements="45" coveredstatements="36" conditionals="10" coveredconditionals="4" methods="9" coveredmethods="5"/>
-        <line num="3" count="1" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
         <line num="7" count="2" type="stmt"/>
         <line num="8" count="2" type="stmt"/>
         <line num="9" count="2" type="stmt"/>
@@ -181,11 +181,11 @@
       </file>
       <file name="Logout.js" path="C:\openclassroom\GrimonprezAlexis_9_202421\Coverage\P6-front-end-testing\src\containers\Logout.js">
         <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="5" count="8" type="stmt"/>
-        <line num="6" count="8" type="stmt"/>
-        <line num="7" count="8" type="stmt"/>
-        <line num="8" count="8" type="stmt"/>
-        <line num="11" count="8" type="stmt"/>
+        <line num="5" count="16" type="stmt"/>
+        <line num="6" count="16" type="stmt"/>
+        <line num="7" count="16" type="stmt"/>
+        <line num="8" count="16" type="stmt"/>
+        <line num="11" count="16" type="stmt"/>
         <line num="12" count="2" type="stmt"/>
         <line num="13" count="2" type="stmt"/>
       </file>
@@ -223,27 +223,27 @@
       </file>
     </package>
     <package name="views">
-      <metrics statements="28" coveredstatements="26" conditionals="30" coveredconditionals="28" methods="14" coveredmethods="14"/>
+      <metrics statements="28" coveredstatements="28" conditionals="30" coveredconditionals="30" methods="14" coveredmethods="14"/>
       <file name="Actions.js" path="C:\openclassroom\GrimonprezAlexis_9_202421\Coverage\P6-front-end-testing\src\views\Actions.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="4" count="10" type="stmt"/>
+        <line num="4" count="26" type="stmt"/>
       </file>
       <file name="BillsUI.js" path="C:\openclassroom\GrimonprezAlexis_9_202421\Coverage\P6-front-end-testing\src\views\BillsUI.js">
-        <metrics statements="10" coveredstatements="8" conditionals="8" coveredconditionals="6" methods="5" coveredmethods="5"/>
-        <line num="7" count="6" type="stmt"/>
-        <line num="8" count="8" type="stmt"/>
-        <line num="22" count="6" type="stmt"/>
-        <line num="23" count="8" type="cond" truecount="4" falsecount="0"/>
-        <line num="28" count="5" type="stmt"/>
-        <line num="45" count="5" type="cond" truecount="1" falsecount="1"/>
-        <line num="46" count="0" type="stmt"/>
-        <line num="47" count="5" type="cond" truecount="1" falsecount="1"/>
-        <line num="48" count="0" type="stmt"/>
-        <line num="51" count="5" type="stmt"/>
+        <metrics statements="10" coveredstatements="10" conditionals="8" coveredconditionals="8" methods="5" coveredmethods="5"/>
+        <line num="7" count="8" type="stmt"/>
+        <line num="8" count="24" type="stmt"/>
+        <line num="22" count="8" type="stmt"/>
+        <line num="23" count="24" type="cond" truecount="4" falsecount="0"/>
+        <line num="28" count="23" type="stmt"/>
+        <line num="45" count="23" type="cond" truecount="2" falsecount="0"/>
+        <line num="46" count="4" type="stmt"/>
+        <line num="47" count="19" type="cond" truecount="2" falsecount="0"/>
+        <line num="48" count="6" type="stmt"/>
+        <line num="51" count="13" type="stmt"/>
       </file>
       <file name="DashboardFormUI.js" path="C:\openclassroom\GrimonprezAlexis_9_202421\Coverage\P6-front-end-testing\src\views\DashboardFormUI.js">
         <metrics statements="2" coveredstatements="2" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
-        <line num="7" count="8" type="stmt"/>
+        <line num="7" count="9" type="stmt"/>
         <line num="26" count="8" type="stmt"/>
       </file>
       <file name="DashboardUI.js" path="C:\openclassroom\GrimonprezAlexis_9_202421\Coverage\P6-front-end-testing\src\views\DashboardUI.js">
@@ -256,27 +256,27 @@
       </file>
       <file name="ErrorPage.js" path="C:\openclassroom\GrimonprezAlexis_9_202421\Coverage\P6-front-end-testing\src\views\ErrorPage.js">
         <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="5" count="5" type="stmt"/>
+        <line num="5" count="11" type="stmt"/>
       </file>
       <file name="LoadingPage.js" path="C:\openclassroom\GrimonprezAlexis_9_202421\Coverage\P6-front-end-testing\src\views\LoadingPage.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="5" count="2" type="stmt"/>
+        <line num="5" count="6" type="stmt"/>
       </file>
       <file name="LoginUI.js" path="C:\openclassroom\GrimonprezAlexis_9_202421\Coverage\P6-front-end-testing\src\views\LoginUI.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="4" count="10" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
       </file>
       <file name="NewBillUI.js" path="C:\openclassroom\GrimonprezAlexis_9_202421\Coverage\P6-front-end-testing\src\views\NewBillUI.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="5" count="3" type="stmt"/>
+        <line num="5" count="7" type="stmt"/>
       </file>
       <file name="VerticalLayout.js" path="C:\openclassroom\GrimonprezAlexis_9_202421\Coverage\P6-front-end-testing\src\views\VerticalLayout.js">
         <metrics statements="6" coveredstatements="6" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
-        <line num="7" count="23" type="stmt"/>
-        <line num="8" count="23" type="cond" truecount="2" falsecount="0"/>
-        <line num="9" count="10" type="stmt"/>
-        <line num="11" count="23" type="cond" truecount="4" falsecount="0"/>
-        <line num="12" count="1" type="stmt"/>
+        <line num="7" count="45" type="stmt"/>
+        <line num="8" count="45" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="32" type="stmt"/>
+        <line num="11" count="45" type="cond" truecount="4" falsecount="0"/>
+        <line num="12" count="23" type="stmt"/>
         <line num="29" count="22" type="stmt"/>
       </file>
     </package>
