@@ -91,5 +91,21 @@ export default {
         status: 'pending'
       }]
     })
+  },
+  //https://github.com/testing-library/react-testing-library/issues/93
+  storage: () => {
+    return {
+      ref: () => {
+        return {
+          child: () => {
+            return {
+              put: () => Promise.resolve(true)
+            }
+          }
+        }
+      }
+    }
   }
+
+
 }

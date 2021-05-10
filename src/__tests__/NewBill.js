@@ -1,37 +1,24 @@
 import { fireEvent, screen } from "@testing-library/dom"
 import NewBillUI from "../views/NewBillUI.js"
 import NewBill from "../containers/NewBill.js"
+import firebase from "../__mocks__/firebase";
 import Firestore from "../app/Firestore";
 import { localStorageMock } from "../__mocks__/localStorage";
 import { ROUTES, ROUTES_PATH } from "../constants/routes";
 import Router from "../app/Router";
-
+import userEvent from "@testing-library/user-event";
 
 
 describe("Given I am connected as an employee", () => {
   describe.only("When I am on NewBill Page", () => {
-    test("Then ...", () => {
-      Object.defineProperty(window, "localStorage", {
-        value: localStorageMock,
-      });
-      window.localStorage.setItem(
-        "user",
-        JSON.stringify({
-          type: "Employee",
-        })
-      );
+    test("Then clicked on handleSubmit", () => {
+      Object.defineProperty(window, "localStorage", { value: localStorageMock });
+      window.localStorage.setItem( "user", JSON.stringify({ type: "Employee" }) );
       const html = NewBillUI();
       document.body.innerHTML = html;
-      const onNavigate = (pathname) => {
-        document.body.innerHTML = ROUTES({ pathname });
-      };
+      const onNavigate = (pathname) => { document.body.innerHTML = ROUTES({ pathname }); };
       const firestore = null;
-      const newBill = new NewBill({
-        document,
-        onNavigate,
-        firestore,
-        localStorage: window.localStorage
-      });
+      const newBill = new NewBill({ document, onNavigate, firestore, localStorage: window.localStorage });
       jest.spyOn(window, 'alert').mockImplementation(() => {});
 
       const handleSubmit = jest.fn(newBill.handleSubmit);
@@ -39,16 +26,32 @@ describe("Given I am connected as an employee", () => {
       formNewBill.addEventListener('submit', handleSubmit);
       fireEvent.submit(formNewBill);
       expect(handleSubmit).toHaveBeenCalled();
+    })
+    test("Then clicked on handleChangeFile", () => {
 
-      //handleChangeFile
-      const handleChangeFile = jest.fn(newBill.handleChangeFile);
-      const inputImage = screen.getByTestId('file');
-      inputImage.addEventListener('change', handleChangeFile);
+      Object.defineProperty(window, "localStorage", { value: localStorageMock });
+      window.localStorage.setItem( "user", JSON.stringify({ type: "Employee" }) );
+      
+      const html = NewBillUI();
+      document.body.innerHTML = html;
+      
+      const onNavigate = (pathname) => { document.body.innerHTML = ROUTES({ pathname }); };
+      const firestore = firebase;
+      const newBill = new NewBill({ document, onNavigate, firestore, localStorage: window.localStorage });
 
-      const file = new File(['(⌐□_□)'], 'chucknorris.png', { type: 'image/png', })
-      // i have to do this because `input.files =[file]` is not allowed
-      Object.defineProperty(inputEl, 'files', { value: [file] });
-      fireEvent.change(inputImage);
+      const file = new File(['hello'], "preview-facture-2021-02-.jpg", { type: "image/png" })
+      const event = { target: { value: '/not/sure', files: [file] } }
+      
+      const imageInput = screen.getByTestId("file");
+      const handleChangeFile = jest.fn((e) => newBill.handleChangeFile(e)) 
+      //const handleChangeFile = jest.fn(newBill.handleChangeFile);
+      imageInput.addEventListener('change', handleChangeFile);
+      
+      userEvent.upload(imageInput, event);
+      expect(handleChangeFile).toHaveBeenCalled();
+
+      //expect(imageInput.files[0]).toStrictEqual(file)
+      //expect(imageInput.files).toHaveLength(1)
 
 
 /*       
