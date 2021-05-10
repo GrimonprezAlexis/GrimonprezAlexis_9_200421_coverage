@@ -62,5 +62,34 @@ export default {
         "fileUrl": "https://firebasestorage.googleapis.com/v0/b/billable-677b6.a…f-1.jpg?alt=media&token=4df6ed2c-12c8-42a2-b013-346c1346f732"
       }]
     })
+  },
+  add: () => {
+    return Promise.resolve({
+      data: [{
+        email: "johndoe@email.com",
+        type: 'Hôtel et logement',
+        name:  'encore',
+        amount: 400,
+        date:  '2021-01-01',
+        vat: '80',
+        pct: 20,
+        commentary: 'new bill 1 test',
+        fileUrl: 'https://firebasestorage.googleapis.com/v0/b/billable-677b6.a…f-1.jpg?alt=media&token=c1640e12-a24b-4b11-ae52-529112e9602a',
+        fileName: 'preview-facture-free-201801-pdf-1.jpg',
+        status: 'pending'
+      }, {
+        email: "johndoe@email.com",
+        type: 'Transports',
+        name:  'test transport',
+        amount: 200,
+        date:  '2021-02-02',
+        vat: '',
+        pct: 20,
+        commentary: 'new bill 2 test',
+        fileUrl: 'https://firebasestorage.googleapis.com/v0/b/billable-677b6.a…61.jpeg?alt=media&token=7685cd61-c112-42bc-9929-8a799bb82d8b',
+        fileName: '1592770761.jpeg',
+        status: 'pending'
+      }]
+    })
   }
 }
